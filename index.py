@@ -25,27 +25,56 @@ if c_menu == 1 :
   if c_level == 1 :
       print("D'accord, allons-y !")
       rdm_nbre = randint(1,10)
-      print(rdm_nbre)
 
-      
       while True:
          nbre = int(input("Quel est ton nombre ?"))
          cpt = cpt + 1
-         if nbre == rdm_nbre :
+         if nbre > rdm_nbre :
+             print("c'est moins !")
+         elif nbre < rdm_nbre :
+             print("c'est plus !")
+         elif nbre == rdm_nbre :
             print("Bravo ! Tu as trouvé en ",cpt," coups !")
             break
          if cpt == 5 :
             print("Dommage, tu as utilisé tes 5 coups, tu as perdu !")
 
 
-
-
 if c_level == 2 :
-      print("mode 2 !")
+      print("D'accord, allons-y !")
+      rdm_nbre = randint(1,100)
+
+      while True:
+         nbre = int(input("Quel est ton nombre ?"))
+         cpt = cpt + 1
+         if nbre > rdm_nbre :
+             print("c'est moins !")
+         elif nbre < rdm_nbre :
+             print("c'est plus !")
+         elif nbre == rdm_nbre :
+            print("Bravo ! Tu as trouvé en ",cpt," coups !")
+            break
+         if cpt == 5 :
+            print("Dommage, tu as utilisé tes 5 coups, tu as perdu !")
 
 
 if c_level == 3 :
-      print("mode 3 !")      
+      print("D'accord, allons-y !")
+      rdm_nbre = randint(1,1000)
+
+      while True:
+         nbre = int(input("Quel est ton nombre ?"))
+         cpt = cpt + 1
+         if nbre > rdm_nbre :
+             print("c'est moins !")
+         elif nbre < rdm_nbre :
+             print("c'est plus !")
+         elif nbre == rdm_nbre :
+            print("Bravo ! Tu as trouvé en ",cpt," coups !")
+            break
+         if cpt == 5 :
+            print("Dommage, tu as utilisé tes 5 coups, tu as perdu !") 
+            break 
 
 
 ## Scores
